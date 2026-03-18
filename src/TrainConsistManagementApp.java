@@ -7,16 +7,24 @@ public class TrainConsistManagementApp {
 
     public static void main(String[] args) {
 
-        // Welcome Message
         System.out.println("=== Train Consist Management App ===");
 
-        // Initialize empty train consist
-        List<String> trainConsist = new ArrayList<>();
+        List<String> passengerBogies = new ArrayList<>();
 
-        // Display initial bogie count
-        System.out.println("Initial number of bogies: " + trainConsist.size());
+        passengerBogies.add("Sleeper");
+        passengerBogies.add("AC Chair");
+        passengerBogies.add("First Class");
 
-        // Program continues
-        System.out.println("Train system initialized successfully.");
+        System.out.println("Passenger bogies after addition: " + passengerBogies);
+
+        passengerBogies.remove("AC Chair");
+        System.out.println("Passenger bogies after removing AC Chair: " + passengerBogies);
+
+        boolean hasSleeper = passengerBogies.contains("Sleeper");
+        System.out.println("Does train have Sleeper bogie? " + hasSleeper);
+
+        System.out.println("Final passenger bogies: " + passengerBogies);
+
+        System.out.println("Passenger bogie management completed successfully.");
     }
 }
