@@ -25,5 +25,6 @@ public class TrainConsistManagementApp {
         System.out.println("Duplicates are automatically ignored by HashSet.\n");
 
         System.out.println("UC3 uniqueness validation completed...");
+        System.out.println("----------------------------------------");
     }
 }
